@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: arial, san-serif;
+    font-family: arial, sans-serif;
     background-color: #fdf6f3;
 }
 
@@ -65,4 +65,149 @@ body{
 
 
 /*Section */
+
+.me{
+    background-color: #d4e4f4;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.me-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-content{
+    max-width: 50%;
+}
+.text-content h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+}
+.button{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-primary{
+    background-color: #ff6600;
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #005eff;
+}
+
+.img-content img{
+    margin-top: 50px;
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 8%;
+}
+
+/* Responsive Design */
+
+@media (min-width: 1200px) {
+    .me-content h2  {
+        font-size: 45px;    /* Larger font for big screens */
+    }
+}
+
+/* Small screens (up to 768px, typically for mobile devices) */
+@media (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+   .me-content h2 {
+        font-size: 25px;    /* Adjusted font size for tablets */
+    }
+
+    .me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 120px 20px 30px; /* Adjust for mobile layout */
+    }
+
+    .me-content {
+        max-width: 100%;
+    }
+
+    .me-content h2 {
+        font-size: 32px;
+    }
+
+    .me-content p {
+        font-size: 14px;
+    }
+
+    .button {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img-content img {
+        max-width: 300px;
+        margin-top: 20px;
+    }
+}
+
+/* Extra small screens (up to 480px, typically for very small devices) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    h2 {
+        font-size: 18px;    /* Smaller font size for mobile */
+    }
+
+    .me {
+        padding: 100px 10px 20px; /* Reduce padding for small devices */
+    }
+
+    .me-content h2 {
+        font-size: 24px;
+    }
+
+    .me-content p {
+        font-size: 12px;
+    }
+
+    .img-content img {
+        max-width: 250px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
 
