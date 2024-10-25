@@ -15,6 +15,11 @@ body{
     align-items: center;
     padding: 20px 15px;
     background-color: #fdf6f3;
+    position: fixed;  /* Makes the navbar fixed */
+    top: 0;           /* Fixes it to the top */
+    width: 100%;      /* Ensures the navbar spans the full width */
+    z-index: 1000;    /* Keeps the navbar on top of other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
 }
 
 .logo{
@@ -57,3 +62,7 @@ body{
 .hire-me-btn:hover{
     background-color: blue;
 }
+
+
+/*Section */
+
