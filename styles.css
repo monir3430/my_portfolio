@@ -333,3 +333,175 @@ body{
         padding: 20px;
     }
 }
+/*Summary============*/
+
+.resume-summary {
+    width: 80%;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-summary h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education, .experience {
+    width: 48%;
+}
+
+.education h3, .experience h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.education-item, .experience-item {
+    width: 350px;
+    height: 150px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgb(0, 94, 255);
+
+}
+
+.education-item h4, .experience-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.education-item h4, p {
+    padding: 8px;
+}
+
+.education-item p, .experience-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.download-btn {
+    margin-top: 20px;
+}
+
+.download-btn button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.download-btn button:hover {
+    background-color: #ff5a4d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-content {
+        flex-direction: column;
+    }
+
+    .education, .experience {
+        width: 100%;
+    }
+}
+
+/*Foter-------------*/
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fdf4f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-form {
+    width: 45%;
+}
+
+.contact-form h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff5a4d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
